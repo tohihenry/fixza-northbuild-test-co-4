@@ -1,0 +1,605 @@
+{
+  "project": {
+    "businessIdentity": {
+      "id": 4,
+      "businessCountry": "new_zealand",
+      "registryType": "nzbn",
+      "registryNumber": "9429051234567",
+      "legalEntityName": "North Shore Test Builders Limited",
+      "tradingName": "NorthBuild Test Co",
+      "tradeType": "Residential building and renovation",
+      "serviceAreasPrimary": [
+        "Whangārei",
+        "Kaipara",
+        "and the Bay of Islands"
+      ],
+      "contactPersonName": "Jordan Taylor",
+      "phonePrimary": "+64 21 555 0182",
+      "emailPrimary": "jordan@northbuildtest.co.nz",
+      "businessAddress": "18 Kauri Grove, Kensington, Whangārei 0112",
+      "verificationStatus": "verified",
+      "createdByUserId": 1,
+      "createdAt": "2026-04-12T02:01:17.858Z",
+      "updatedAt": "2026-04-12T02:01:17.858Z"
+    },
+    "websiteProject": {
+      "id": 4,
+      "businessIdentityId": 4,
+      "workflowState": "intake_review",
+      "workflowBlockerCode": "email_risk_unresolved",
+      "workflowBlockerNote": "email risk unresolved",
+      "packageType": "nz_standard",
+      "platformTarget": "wix_studio",
+      "supportPathSelected": "self_managed",
+      "revisionRoundsUsed": 0,
+      "domainRiskLevel": "high",
+      "launchMethod": "preview_only",
+      "assignedOwner": "Local Dev Admin",
+      "intakeCompletionPercent": 100,
+      "isBuildReady": false,
+      "needsDomainAttention": true,
+      "isLaunchBlocked": true,
+      "createdByUserId": 1,
+      "createdAt": "2026-04-12T02:01:17.858Z",
+      "updatedAt": "2026-04-12T02:01:17.858Z"
+    },
+    "intakeBrief": {
+      "id": 4,
+      "projectId": 4,
+      "submissionStatus": "submitted",
+      "businessCountry": "New Zealand",
+      "registryNumber": "9429051234567",
+      "legalEntityName": "North Shore Test Builders Limited",
+      "tradingName": "NorthBuild Test Co",
+      "tradeType": "Residential building and renovation",
+      "serviceAreasPrimary": "Whangārei, Kaipara, and the Bay of Islands",
+      "contactPersonName": "Jordan Taylor",
+      "phonePrimary": "+64 21 555 0182",
+      "emailPrimary": "jordan@northbuildtest.co.nz",
+      "businessAddress": "18 Kauri Grove, Kensington, Whangārei 0112",
+      "websiteCurrent": "Yes",
+      "websiteCurrentUrl": "https://www.northbuildtest.co.nz",
+      "websiteGoalPrimary": "Get more leads",
+      "websiteGoalSecondary": "Look more professional",
+      "conversionActionPrimary": "Request a quote",
+      "customerTypePrimary": "Homeowners",
+      "jobFocus": "Bathroom renovations, decks, and higher-value home upgrades",
+      "servicesCore": "New homes, renovations, decks, kitchens, bathrooms",
+      "servicePriorityPrimary": "Renovations and extensions",
+      "servicesSecondary": "Deck repairs, exterior upgrades, small commercial fit-outs",
+      "serviceAreasSecondary": "Mangawhai, Ruakākā, Kerikeri",
+      "jobSizeMinimum": "$8,000 minimum project value",
+      "emergencyService": "Sometimes",
+      "travelRadiusOrRegion": "Up to 90 minutes from Whangārei depending on project size",
+      "brandWords": "Trusted, practical, professional",
+      "brandColoursKeep": "Deep green, off-white, charcoal",
+      "brandColoursAvoid": "Bright red and neon colours",
+      "brandExamplesLike": "Clean local trade websites with strong project photos and trust signals",
+      "yearsInBusiness": "11 years",
+      "licencesAndCertifications": "Licensed Building Practitioner, Site Safe",
+      "guaranteesOrWarranties": "Workmanship guarantee and supplier-backed material warranties",
+      "reviewsAvailable": "A few",
+      "awardsOrNotableProjects": "Recent full-home renovation in One Tree Point and several repeat local clients",
+      "websiteLike": "Simple enquiry forms, strong before-and-after photos, and easy mobile navigation",
+      "websiteDislike": "Too much jargon, cluttered layouts, and stock imagery that looks fake",
+      "websiteKeep": "Project gallery, about section, and service pages if they can be improved",
+      "websiteChange": "Sharper copy, better mobile layout, and clearer calls to action",
+      "pagesToKeepOrMerge": "Keep Home, About, Services, and Contact. Merge old blog content into project highlights.",
+      "redirectOldContent": "Yes",
+      "domainExisting": "Yes",
+      "domainNameCurrent": "northbuildtest.co.nz",
+      "domainKeepExisting": "Yes",
+      "domainRegistrar": "Freeparking",
+      "domainAccessOwner": "I do",
+      "domainEmailInUse": "Yes",
+      "domainDnsConfidence": "Somewhat confident",
+      "domainLaunchTiming": "Preview first, launch later",
+      "domainNewNeeded": "No",
+      "domainNamePreferences": "northbuildtest.co.nz, northbuild.nz",
+      "domainOwnerPreference": "The client should own the domain",
+      "logoUpload": "https://drive.google.com/test-logo",
+      "projectPhotosUpload": "https://drive.google.com/test-project-photos",
+      "teamPhotosUpload": "https://drive.google.com/test-team-photos",
+      "testimonialUpload": "https://drive.google.com/test-testimonials",
+      "brochureOrProfileUpload": "https://drive.google.com/test-company-profile",
+      "socialLinks": "https://facebook.com/northbuildtest, https://instagram.com/northbuildtest",
+      "missingAssetsHelp": "No",
+      "handoverPreference": "I want to manage content myself",
+      "editingConfidence": "I would like guidance",
+      "trainingPreference": "Video guides",
+      "supportNeedsOther": "We would like a short handover session after launch and a simple checklist for updating project photos.",
+      "briefAccuracyConfirmation": true,
+      "domainAuthorityConfirmation": true,
+      "launchContactPreference": "Email me first, then call if anything is urgent",
+      "outstandingItems": "Need to confirm final testimonial wording and send through a couple more completed project photos.",
+      "upgradeFlags": [
+        "location_specific_pages",
+        "technical_migration_review"
+      ],
+      "assetGapFlags": [],
+      "rawIntakeJson": {
+        "business_country": "New Zealand",
+        "registry_number": "9429051234567",
+        "legal_entity_name": "North Shore Test Builders Limited",
+        "trading_name": "NorthBuild Test Co",
+        "trade_type": "Residential building and renovation",
+        "service_areas_primary": "Whangārei, Kaipara, and the Bay of Islands",
+        "contact_person_name": "Jordan Taylor",
+        "phone_primary": "+64 21 555 0182",
+        "email_primary": "jordan@northbuildtest.co.nz",
+        "business_address": "18 Kauri Grove, Kensington, Whangārei 0112",
+        "website_current": "Yes",
+        "website_current_url": "https://www.northbuildtest.co.nz",
+        "website_goal_primary": "Get more leads",
+        "website_goal_secondary": "Look more professional",
+        "conversion_action_primary": "Request a quote",
+        "customer_type_primary": "Homeowners",
+        "job_focus": "Bathroom renovations, decks, and higher-value home upgrades",
+        "services_core": "New homes, renovations, decks, kitchens, bathrooms",
+        "service_priority_primary": "Renovations and extensions",
+        "services_secondary": "Deck repairs, exterior upgrades, small commercial fit-outs",
+        "service_areas_secondary": "Mangawhai, Ruakākā, Kerikeri",
+        "job_size_minimum": "$8,000 minimum project value",
+        "emergency_service": "Sometimes",
+        "travel_radius_or_region": "Up to 90 minutes from Whangārei depending on project size",
+        "brand_words": "Trusted, practical, professional",
+        "brand_colours_keep": "Deep green, off-white, charcoal",
+        "brand_colours_avoid": "Bright red and neon colours",
+        "brand_examples_like": "Clean local trade websites with strong project photos and trust signals",
+        "years_in_business": "11 years",
+        "licences_and_certifications": "Licensed Building Practitioner, Site Safe",
+        "guarantees_or_warranties": "Workmanship guarantee and supplier-backed material warranties",
+        "reviews_available": "A few",
+        "awards_or_notable_projects": "Recent full-home renovation in One Tree Point and several repeat local clients",
+        "website_like": "Simple enquiry forms, strong before-and-after photos, and easy mobile navigation",
+        "website_dislike": "Too much jargon, cluttered layouts, and stock imagery that looks fake",
+        "website_keep": "Project gallery, about section, and service pages if they can be improved",
+        "website_change": "Sharper copy, better mobile layout, and clearer calls to action",
+        "pages_to_keep_or_merge": "Keep Home, About, Services, and Contact. Merge old blog content into project highlights.",
+        "redirect_old_content": "Yes",
+        "domain_existing": "Yes",
+        "domain_name_current": "northbuildtest.co.nz",
+        "domain_keep_existing": "Yes",
+        "domain_registrar": "Freeparking",
+        "domain_access_owner": "I do",
+        "domain_email_in_use": "Yes",
+        "domain_dns_confidence": "Somewhat confident",
+        "domain_launch_timing": "Preview first, launch later",
+        "domain_new_needed": "No",
+        "domain_name_preferences": "northbuildtest.co.nz, northbuild.nz",
+        "domain_owner_preference": "The client should own the domain",
+        "logo_upload": "https://drive.google.com/test-logo",
+        "project_photos_upload": "https://drive.google.com/test-project-photos",
+        "team_photos_upload": "https://drive.google.com/test-team-photos",
+        "testimonial_upload": "https://drive.google.com/test-testimonials",
+        "brochure_or_profile_upload": "https://drive.google.com/test-company-profile",
+        "social_links": "https://facebook.com/northbuildtest, https://instagram.com/northbuildtest",
+        "missing_assets_help": "No",
+        "handover_preference": "I want to manage content myself",
+        "editing_confidence": "I would like guidance",
+        "training_preference": "Video guides",
+        "support_needs_other": "We would like a short handover session after launch and a simple checklist for updating project photos.",
+        "brief_accuracy_confirmation": true,
+        "domain_authority_confirmation": true,
+        "launch_contact_preference": "Email me first, then call if anything is urgent",
+        "outstanding_items": "Need to confirm final testimonial wording and send through a couple more completed project photos."
+      },
+      "submittedAt": "2026-04-12T02:01:17.858Z",
+      "reviewedAt": null,
+      "reviewSummary": null,
+      "createdAt": "2026-04-12T02:01:17.858Z",
+      "updatedAt": "2026-04-12T02:01:17.858Z"
+    },
+    "domainControl": {
+      "id": 4,
+      "projectId": 4,
+      "domainExisting": true,
+      "domainNameCurrent": "northbuildtest.co.nz",
+      "domainRegistrar": "Freeparking",
+      "domainHolderName": "Jordan Taylor",
+      "registrarAccessStatus": "confirmed",
+      "dnsHost": "Freeparking",
+      "dnsHostCapturedAt": "2026-04-12T02:01:17.858Z",
+      "emailProviderDetected": "unknown",
+      "emailProviderIdentifiedAt": null,
+      "mxRecordsSnapshot": [],
+      "mxRecordsCapturedAt": null,
+      "txtRecordsSnapshot": [],
+      "txtRecordsCapturedAt": null,
+      "emailRiskFlag": true,
+      "launchHoldReason": "MX and TXT preservation has not yet been confirmed",
+      "cutoverStrategy": "preview_only",
+      "approvalForLaunch": true,
+      "postLaunchVerified": false,
+      "lastReviewedByUserId": 1,
+      "lastReviewedByName": "Local Dev Admin",
+      "lastReviewedAt": null,
+      "createdAt": "2026-04-12T02:01:17.858Z",
+      "updatedAt": "2026-04-12T02:01:17.858Z"
+    }
+  },
+  "automationPayload": {
+    "payload": {
+      "meta": {
+        "submissionId": "fxz_project_4",
+        "customerAccountId": "user_1",
+        "sourceForm": "website_refresh_v1",
+        "schemaVersion": "1.1.0",
+        "submittedAt": "2026-04-12T02:01:17.858Z",
+        "normalisedAt": "2026-04-12T02:01:17.858Z",
+        "submittedByName": "Local Dev Admin",
+        "submittedByEmail": "jordan@northbuildtest.co.nz",
+        "countryBranch": "new_zealand"
+      },
+      "verification": {
+        "verificationSystem": "nzbn",
+        "registryNumber": "9429051234567",
+        "legalEntityName": "North Shore Test Builders Limited",
+        "verificationStatus": "verified",
+        "verificationSource": "fixza_intake_pipeline",
+        "registeredAddress": "18 Kauri Grove, Kensington, Whangārei 0112"
+      },
+      "businessProfile": {
+        "tradingName": "NorthBuild Test Co",
+        "tradeType": "residential_building_and_renovation",
+        "contactPersonName": "Jordan Taylor",
+        "phonePrimary": "+64 21 555 0182",
+        "emailPrimary": "jordan@northbuildtest.co.nz",
+        "businessAddressPublic": "18 Kauri Grove, Kensington, Whangārei 0112",
+        "serviceAreasPrimary": [
+          "Whangārei",
+          "Kaipara",
+          "and the Bay of Islands"
+        ],
+        "serviceAreasSecondary": [
+          "Mangawhai",
+          "Ruakākā",
+          "Kerikeri"
+        ],
+        "currentCompanyWebsite": "https://www.northbuildtest.co.nz"
+      },
+      "websiteStrategy": {
+        "websiteCurrent": true,
+        "websiteCurrentUrl": "https://www.northbuildtest.co.nz",
+        "websiteGoalPrimary": "more_leads",
+        "websiteGoalSecondary": [
+          "look_more_professional"
+        ],
+        "conversionActionPrimary": "request_quote",
+        "customerTypePrimary": "homeowners",
+        "jobFocus": "Bathroom renovations, decks, and higher-value home upgrades"
+      },
+      "contentStructure": {
+        "servicesCore": [
+          "New homes",
+          "renovations",
+          "decks",
+          "kitchens",
+          "bathrooms"
+        ],
+        "servicePriorityPrimary": "Renovations and extensions",
+        "servicesSecondary": [
+          "Deck repairs",
+          "exterior upgrades",
+          "small commercial fit-outs"
+        ],
+        "jobSizeMinimum": "$8,000 minimum project value",
+        "emergencyService": "sometimes",
+        "travelRadiusOrRegion": "Up to 90 minutes from Whangārei depending on project size"
+      },
+      "brandProfile": {
+        "brandWords": [
+          "Trusted",
+          "practical",
+          "professional"
+        ],
+        "brandColoursKeep": [
+          "Deep green",
+          "off-white",
+          "charcoal"
+        ],
+        "brandColoursAvoid": [
+          "Bright red and neon colours"
+        ],
+        "brandExamplesLike": [
+          "Clean local trade websites with strong project photos and trust signals"
+        ],
+        "yearsInBusiness": "11 years",
+        "licencesAndCertifications": [
+          "Licensed Building Practitioner",
+          "Site Safe"
+        ],
+        "guaranteesOrWarranties": [
+          "Workmanship guarantee and supplier-backed material warranties"
+        ],
+        "reviewsAvailable": "a_few",
+        "awardsOrNotableProjects": [
+          "Recent full-home renovation in One Tree Point and several repeat local clients"
+        ]
+      },
+      "currentWebsiteReview": {
+        "applicable": true,
+        "websiteLike": "Simple enquiry forms, strong before-and-after photos, and easy mobile navigation",
+        "websiteDislike": "Too much jargon, cluttered layouts, and stock imagery that looks fake",
+        "websiteKeep": "Project gallery, about section, and service pages if they can be improved",
+        "websiteChange": "Sharper copy, better mobile layout, and clearer calls to action",
+        "pagesToKeepOrMerge": "Keep Home, About, Services, and Contact. Merge old blog content into project highlights.",
+        "redirectOldContent": "yes",
+        "seoCarryForwardNeeded": true
+      },
+      "domainPlan": {
+        "domainExisting": true,
+        "domainNameCurrent": "northbuildtest.co.nz",
+        "domainKeepExisting": true,
+        "domainRegistrar": "Freeparking",
+        "domainAccessOwner": "i_do",
+        "domainEmailInUse": true,
+        "domainDnsConfidence": "not_sure",
+        "domainLaunchTiming": "preview_first",
+        "domainNewNeeded": false,
+        "domainNamePreferences": [
+          "northbuildtest.co.nz",
+          "northbuild.nz"
+        ],
+        "domainOwnerPreference": "client"
+      },
+      "assetPack": {
+        "logoFiles": [
+          {
+            "fileId": "logo_1",
+            "fileName": "test-logo",
+            "fileType": "application/octet-stream",
+            "source": "upload",
+            "storageUrl": "https://drive.google.com/test-logo",
+            "uploadedAt": "2026-04-12T02:01:17.858Z"
+          }
+        ],
+        "projectPhotoFiles": [
+          {
+            "fileId": "project_photo_1",
+            "fileName": "test-project-photos",
+            "fileType": "application/octet-stream",
+            "source": "upload",
+            "storageUrl": "https://drive.google.com/test-project-photos",
+            "uploadedAt": "2026-04-12T02:01:17.858Z"
+          }
+        ],
+        "teamPhotoFiles": [
+          {
+            "fileId": "team_photo_1",
+            "fileName": "test-team-photos",
+            "fileType": "application/octet-stream",
+            "source": "upload",
+            "storageUrl": "https://drive.google.com/test-team-photos",
+            "uploadedAt": "2026-04-12T02:01:17.858Z"
+          }
+        ],
+        "testimonialFiles": [
+          {
+            "fileId": "testimonial_1",
+            "fileName": "test-testimonials",
+            "fileType": "application/octet-stream",
+            "source": "upload",
+            "storageUrl": "https://drive.google.com/test-testimonials",
+            "uploadedAt": "2026-04-12T02:01:17.858Z"
+          }
+        ],
+        "brochureFiles": [
+          {
+            "fileId": "brochure_1",
+            "fileName": "test-company-profile",
+            "fileType": "application/octet-stream",
+            "source": "upload",
+            "storageUrl": "https://drive.google.com/test-company-profile",
+            "uploadedAt": "2026-04-12T02:01:17.858Z"
+          }
+        ],
+        "socialLinks": [
+          "https://facebook.com/northbuildtest",
+          "https://instagram.com/northbuildtest"
+        ],
+        "missingAssetsHelp": "no",
+        "assetGapSummary": []
+      },
+      "supportModel": {
+        "handoverPreference": "self_managed",
+        "editingConfidence": "need_guidance",
+        "trainingPreference": "video_guides",
+        "supportNeedsOther": "We would like a short handover session after launch and a simple checklist for updating project photos.",
+        "editingSurfacePlanned": "content_portal"
+      },
+      "deliveryModel": {
+        "siteOutputMode": "static_site",
+        "hostingProvider": "cloudflare_pages",
+        "repoStrategy": "per_client_repo",
+        "previewMode": "branch_preview",
+        "liveDomainMode": "preview_only",
+        "templateFamily": "residential_building_and_renovation_nz_trade",
+        "contentSourceMode": "structured_payload"
+      },
+      "derivedFlags": {
+        "isRefreshProject": true,
+        "needsCurrentSiteReview": true,
+        "needsDomainReview": true,
+        "needsNewDomainRegistration": false,
+        "emailRiskPresent": true,
+        "dnsAccessUnclear": true,
+        "previewLaunchRecommended": true,
+        "needsAssetFollowUp": false,
+        "reviewsCanBeUsed": true,
+        "requiresManualReview": true,
+        "isSelfManagedCandidate": true,
+        "isManagedServiceCandidate": false,
+        "launchBlocked": true,
+        "seoPackageReady": true
+      },
+      "routing": {
+        "recommendedPlatform": "static_fixza_stack",
+        "routingReason": "Default to Wix Studio while holding launch work for domain-risk review.",
+        "templateFamily": "residential_building_and_renovation_nz_trade",
+        "productionLane": "manual_review",
+        "domainLane": "email_risk_review",
+        "repoName": null,
+        "previewUrl": null,
+        "liveUrl": null,
+        "cdnZoneReference": null
+      },
+      "workflowStatus": {
+        "intakeStatus": "submitted",
+        "contentPackageStatus": "not_started",
+        "buildStatus": "not_started",
+        "qaStatus": "issues_found",
+        "domainStatus": "review_needed",
+        "seoStatus": "ready",
+        "handoverStatus": "not_started",
+        "repoProvisioningStatus": "not_started",
+        "previewStatus": "not_started",
+        "launchStatus": "blocked",
+        "lastUpdatedAt": "2026-04-12T02:01:17.858Z"
+      },
+      "handoverPack": {
+        "clientOwnsDomain": true,
+        "clientOwnsRepo": true,
+        "clientOwnsHostingProject": true,
+        "credentialsTransferred": false,
+        "editingGuidePrepared": true,
+        "trainingDelivered": false,
+        "maintenancePlanSelected": "none",
+        "exitPathConfirmed": true
+      }
+    },
+    "templateMapping": {
+      "hero": {
+        "headingFocus": "NorthBuild Test Co for Renovations and extensions",
+        "localityLine": "Whangārei, Kaipara, and the Bay of Islands, Mangawhai, Ruakākā, Kerikeri",
+        "primaryCta": "Request a quote",
+        "supportingGoal": "Get more leads",
+        "notes": [
+          "Homeowners",
+          "Bathroom renovations, decks, and higher-value home upgrades",
+          "Trusted",
+          "practical",
+          "professional"
+        ]
+      },
+      "services": {
+        "leadService": "Renovations and extensions",
+        "coreServices": [
+          "New homes",
+          "renovations",
+          "decks",
+          "kitchens",
+          "bathrooms"
+        ],
+        "secondaryServices": [
+          "Deck repairs",
+          "exterior upgrades",
+          "small commercial fit-outs"
+        ],
+        "serviceAreas": [
+          "Whangārei",
+          "Kaipara",
+          "and the Bay of Islands",
+          "Mangawhai",
+          "Ruakākā",
+          "Kerikeri"
+        ]
+      },
+      "trust": {
+        "brandTone": [
+          "Trusted",
+          "practical",
+          "professional"
+        ],
+        "proofPoints": [
+          "11 years",
+          "Licensed Building Practitioner",
+          "Site Safe",
+          "Workmanship guarantee and supplier-backed material warranties",
+          "Recent full-home renovation in One Tree Point and several repeat local clients"
+        ],
+        "testimonialReadiness": "ready_to_use",
+        "imageryReadiness": "ready"
+      },
+      "contact": {
+        "phonePrimary": "+64 21 555 0182",
+        "emailPrimary": "jordan@northbuildtest.co.nz",
+        "launchContact": "Email me first, then call if anything is urgent",
+        "ctaMode": "Request a quote"
+      },
+      "seo": {
+        "homepageTitle": "Renovations and extensions in Whangārei | NorthBuild Test Co",
+        "homepageMetaDescription": "NorthBuild Test Co helps Whangārei customers with renovations and extensions. Request a quote.",
+        "primaryServicePhrase": "renovations and extensions in Whangārei",
+        "primaryLocality": "Whangārei"
+      },
+      "navigation": {
+        "plannedPages": [
+          "Home",
+          "Services",
+          "Projects",
+          "About",
+          "Contact"
+        ],
+        "plannedSections": [
+          "Hero",
+          "Services",
+          "Why Choose Us",
+          "Testimonials",
+          "Existing Site Improvements",
+          "Contact"
+        ]
+      }
+    },
+    "nextActions": [
+      {
+        "title": "Run domain and email safety review before launch planning",
+        "reason": "MX and TXT preservation has not yet been confirmed",
+        "priority": "high",
+        "ownerLane": "domain",
+        "blocking": true,
+        "duePhase": "pre_launch"
+      },
+      {
+        "title": "Audit the existing website before drafting the first build",
+        "reason": "Sharper copy, better mobile layout, and clearer calls to action",
+        "priority": "medium",
+        "ownerLane": "build",
+        "blocking": true,
+        "duePhase": "pre_build"
+      },
+      {
+        "title": "Provision the per-client repository for the static site",
+        "reason": "The approved operating model uses a dedicated repo as the source of truth for each client site.",
+        "priority": "high",
+        "ownerLane": "build",
+        "blocking": true,
+        "duePhase": "pre_preview"
+      },
+      {
+        "title": "Create the first preview deployment",
+        "reason": "Use template family residential_building_and_renovation_nz_trade on the manual_review lane to produce a reviewable static preview before launch.",
+        "priority": "medium",
+        "ownerLane": "build",
+        "blocking": true,
+        "duePhase": "pre_preview"
+      },
+      {
+        "title": "Get preview approval before live launch work",
+        "reason": "The approved launch model requires a preview review step before any production domain cutover.",
+        "priority": "high",
+        "ownerLane": "qa",
+        "blocking": true,
+        "duePhase": "pre_launch"
+      },
+      {
+        "title": "Prepare the self-managed handover pack early",
+        "reason": "The client intends to manage content after launch, so guides, access notes and ownership settings should be prepared from the start.",
+        "priority": "medium",
+        "ownerLane": "handover",
+        "blocking": false,
+        "duePhase": "post_launch"
+      }
+    ]
+  }
+}
