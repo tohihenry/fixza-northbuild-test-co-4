@@ -430,6 +430,7 @@ main { display: block; }
 .hero-showcase {
   padding: 14px;
   overflow: hidden;
+  background: linear-gradient(160deg, #1d2c2b 0%, #243b39 48%, #2e4d48 100%);
 }
 .showcase-stage {
   display: grid;
@@ -440,9 +441,18 @@ main { display: block; }
 .showcase-panel.lead {
   padding: 30px;
   min-height: 220px;
+  color: #f3f6f2;
   background:
-    radial-gradient(circle at top right, var(--accent-soft), transparent 36%),
-    linear-gradient(180deg, var(--surface), var(--surface-alt));
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.16), transparent 36%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+}
+.showcase-panel.lead p,
+.showcase-panel.lead h2,
+.showcase-quote,
+.showcase-quote p,
+.showcase-tile strong,
+.showcase-tile .card-kicker {
+  color: #f3f6f2;
 }
 .showcase-pill-row {
   display: flex;
@@ -462,6 +472,11 @@ main { display: block; }
   background: var(--accent-soft);
   color: var(--text);
 }
+.showcase-pill-row span {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f3f6f2;
+}
 .showcase-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -470,8 +485,8 @@ main { display: block; }
 .showcase-tile {
   padding: 18px;
   border-radius: 22px;
-  border: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--surface), var(--surface-alt));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.05));
   box-shadow: var(--shadow-md);
 }
 .showcase-tile strong {
@@ -483,8 +498,8 @@ main { display: block; }
 .showcase-quote {
   padding: 22px 24px;
   border-radius: 24px;
-  border: 1px solid var(--border);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), var(--surface));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
 }
 .quote-text {
   margin: 0;
