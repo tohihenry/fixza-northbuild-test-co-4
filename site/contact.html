@@ -22,7 +22,8 @@
             <span>Northland Builders | Homeowners and light commercial property owners across Northland</span>
           </div>
         </div>
-        <nav class="topnav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="topnav" id="site-nav" aria-label="Primary">
           <a href="./index.html">Home</a>
 <a href="./about.html">About</a>
 <a href="./services.html">Services</a>
@@ -37,8 +38,8 @@
             <p class="eyebrow">Contact NorthBuild Test Co 4</p>
             <div class="hero-intro">
               <h1>Talk through your job and plan the next step</h1>
-              <p>Getting in touch should feel simple, local, and low-friction, whether the client is ready for a site visit or just wants to start the conversation.</p>
-              <p>This page keeps the contact route clear, direct, and easy to trust from the first enquiry.</p>
+              <p>Getting in touch should feel simple and local, whether the client is ready for a site visit or an early scope chat.</p>
+              <p>This page keeps the contact route clear, direct, and easy to act on.</p>
             </div>
             <div class="button-row">
               <a class="button primary" href="mailto:jordan@northbuild.example?subject=Website%20enquiry%20for%20NorthBuild%20Test%20Co%204">Book a site visit</a>
@@ -146,8 +147,8 @@
       <div class="story-panel">
         <p class="eyebrow">Contact details</p>
         <h2>Speak with NorthBuild Test Co 4 about your next job</h2>
-        <p>The contact page gives the business a clear local enquiry route for homeowners and light commercial property owners across Northland.</p>
-        <p>Use this page for direct enquiries, site visit requests, and early discussions about scope, timing, and budget.</p>
+        <p>Use this page for direct enquiries, site visit requests, and early scope chats across Northland.</p>
+        <p>The strongest enquiries usually include the job type, likely timing, budget range, and any site constraints worth knowing early.</p>
       </div>
       <div class="story-aside">
         <article class="aside-card">
@@ -156,9 +157,17 @@
           <p>Primary contact for Jordan at NorthBuild Test Co 4.</p>
         </article>
         <article class="aside-card">
-          <p class="card-kicker">Region</p>
+          <p class="card-kicker">Best fit</p>
           <h3>Northland</h3>
-          <p>Positioned for homeowners and light commercial property owners across Northland who want responsive local service and clear communication.</p>
+          <p>Well suited to homeowners and light commercial property owners in northland who want clear advice, tidy work on site, and a team that follows through properly. who want responsive local service and clearer communication.</p>
+        </article>
+        <article class="aside-card">
+          <p class="card-kicker">Helpful to include</p>
+          <ul class="mini-list compact-list">
+            <li>Job type and what needs to be solved</li>
+            <li>Preferred timing or target start window</li>
+            <li>Budget range, access notes, or key site constraints</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -167,7 +176,7 @@
           <div>
             <p class="eyebrow">Next step</p>
             <h2>Book a site visit</h2>
-            <p>Start with a clear first conversation, a practical site visit, and straightforward next steps. NorthBuild Test Co 4 offers trusted local builders for renovations, decks, and practical home upgrades for homeowners and light commercial property owners across Northland.</p>
+            <p>NorthBuild Test Co 4 offers trusted local builders for renovations, decks, and practical home upgrades across Northland, with a straightforward next step for serious enquiries.</p>
           </div>
           <div class="cta-actions">
             <a class="button primary" href="mailto:jordan@northbuild.example?subject=Website%20enquiry%20for%20NorthBuild%20Test%20Co%204">Book a site visit</a>
@@ -226,23 +235,55 @@
       </div>
 
       <footer class="footer-shell">
-        <div class="footer-row">
+        <div class="footer-row footer-grid">
           <article class="footer-note">
-            <p class="eyebrow">Why clients enquire</p>
-            <strong>NorthBuild Test Co 4 | Contact</strong>
-            <p>A clearer offer, stronger trust cues, and dedicated pages help the business feel more established from the first visit through to the final enquiry.</p>
+            <p class="eyebrow">NorthBuild Test Co 4</p>
+            <strong>Local builders with a clearer route from first visit to first enquiry</strong>
+            <p>The website now combines stronger project framing, cleaner service structure, and a simpler path to contact.</p>
+          </article>
+          <article class="contact-card footer-links-card">
+            <p class="eyebrow">Browse</p>
+            <nav class="footer-links" aria-label="Footer">
+              <a href="./index.html">Home</a>
+<a href="./about.html">About</a>
+<a href="./services.html">Services</a>
+<a href="./projects.html">Projects</a>
+<a href="./contact.html" aria-current="page" class="current">Contact</a>
+            </nav>
           </article>
           <article class="contact-card">
             <p class="eyebrow">Contact</p>
             <strong>Book a site visit</strong>
             <p><a href="mailto:jordan@northbuild.example">jordan@northbuild.example</a></p>
-            <p>Preview prepared for Jordan at NorthBuild Test Co 4.</p>
+            <p>Serving Northland. Preview prepared for Jordan.</p>
           </article>
+        </div>
+        <div class="footer-meta">
+          <span>Northland Builders</span>
+          <span>Built for Homeowners and light commercial property owners</span>
         </div>
       </footer>
     </main>
     <script>
       (() => {
+        const navToggle = document.querySelector('.nav-toggle');
+        const topnav = document.querySelector('.topnav');
+
+        navToggle?.addEventListener('click', () => {
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', String(!expanded));
+          topnav?.classList.toggle('open', !expanded);
+        });
+
+        topnav?.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth <= 760) {
+              navToggle?.setAttribute('aria-expanded', 'false');
+              topnav.classList.remove('open');
+            }
+          });
+        });
+
         const cards = document.querySelectorAll('[data-assistant-card]');
         cards.forEach((card) => {
           const thread = card.querySelector('[data-chat-thread]');
