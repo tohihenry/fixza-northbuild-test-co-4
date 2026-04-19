@@ -835,6 +835,7 @@ main { display: block; }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
 .proof-card {
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(243,248,245,0.9));
 }
@@ -851,8 +852,23 @@ main { display: block; }
 .services-shell .service-card:nth-child(3) {
   transform: translateY(14px);
 }
-play: grid;
-  gap: 8px;
+.project-grid .project-card:first-child,
+.proof-shell .proof-card:first-child {
+  box-shadow: 0 26px 48px rgba(18, 31, 29, 0.14);
+}
+.service-card,
+.project-card,
+.proof-card {
+  overflow: clip;
+}
+.project-meta span {
+  background: rgba(18, 31, 29, 0.05);
+  border: 1px solid rgba(18, 31, 29, 0.08);
+  border-radius: 999px;
+  padding: 10px 14px;
+}
+.proof-grid {
+  align-items: start;
 }
 @media (max-width: 1060px) {
   .showcase-grid {
