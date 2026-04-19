@@ -56,20 +56,21 @@ main { display: block; }
   min-width: 0;
 }
 .brand-mark {
-  width: 82px;
-  height: 56px;
-  border-radius: 18px;
+  width: 124px;
+  height: 72px;
+  padding: 8px;
+  border-radius: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(255,255,255,0.88), rgba(255,255,255,0.65));
+  background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,255,255,0.78));
   box-shadow: 0 14px 30px var(--glow);
 }
 .brand-logo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .brand-copy,
 .hero-copy,
@@ -224,7 +225,27 @@ main { display: block; }
 .media-card.logo-card {
   display: grid;
   place-items: center;
-  padding: 14px;
+  padding: 18px;
+}
+.media-card.logo-card img {
+  object-fit: contain;
+}
+.hero-signal-row {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hero-signal-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--surface), var(--surface-alt));
+  font-size: 0.92rem;
+  color: var(--text);
 }
 .innovation-card {
   margin-top: 18px;
