@@ -54,17 +54,31 @@
           <div class="hero-signal-row">
             <span>Northland based</span>
             <span>Builders specialists</span>
-            <span>Logo and image-ready preview</span>
+            <span>Photo-backed project preview</span>
           </div>
           
-    <article class="innovation-card">
-      <p class="card-kicker">Instant help</p>
-      <h3>Ask about your job</h3>
-      <div class="chat-thread">
-        <div class="chat-bubble user">I need help with renovations.</div>
-        <div class="chat-bubble assistant">Sweet as. We can guide homeowners and light commercial property owners through scope, timing, and the best next step before a site visit is booked.</div>
+    <article class="innovation-card" data-assistant-card data-service="renovations" data-audience="homeowners and light commercial property owners" data-region="Northland" data-business="NorthBuild Test Co 4">
+      <div class="innovation-head">
+        <div>
+          <p class="card-kicker">Quick job guide</p>
+          <h3>Ask about your job</h3>
+        </div>
+        <span class="assistant-status">Live guidance</span>
       </div>
-      <p class="innovation-note">Optional chat-style guidance can be turned on for businesses that want a stronger conversion layer.</p>
+      <div class="chat-thread" data-chat-thread>
+        <div class="chat-bubble assistant">Kia ora, tell us what you need help with and we will suggest the best next step before a site visit is booked.</div>
+      </div>
+      <div class="assistant-prompts">
+        <button type="button" class="assistant-prompt" data-chat-prompt="I need help with renovations.">Renovations</button>
+        <button type="button" class="assistant-prompt" data-chat-prompt="I need help with decking.">Decking</button>
+        <button type="button" class="assistant-prompt" data-chat-prompt="I need a quote this week.">Quote this week</button>
+      </div>
+      <form class="assistant-form" data-chat-form>
+        <label class="sr-only" for="assistant-input-northbuild-test-co-4">Describe your job</label>
+        <input id="assistant-input-northbuild-test-co-4" name="message" class="assistant-input" type="text" placeholder="Describe the job, timing, or budget" />
+        <button type="submit" class="assistant-send">Get guidance</button>
+      </form>
+      <p class="innovation-note">This optional module gives clients a faster way to ask about scope, timing, and the right first step.</p>
     </article>
           <div class="hero-highlight">
             
@@ -315,5 +329,60 @@
         </div>
       </footer>
     </main>
+    <script>
+      (() => {
+        const cards = document.querySelectorAll('[data-assistant-card]');
+        cards.forEach((card) => {
+          const thread = card.querySelector('[data-chat-thread]');
+          const form = card.querySelector('[data-chat-form]');
+          const input = form?.querySelector('input[name="message"]');
+          const prompts = card.querySelectorAll('[data-chat-prompt]');
+          const service = card.getAttribute('data-service') || 'site visit';
+          const audience = card.getAttribute('data-audience') || 'local clients';
+          const region = card.getAttribute('data-region') || 'the area';
+          const business = card.getAttribute('data-business') || 'the team';
+
+          const respond = (message) => {
+            if (!thread || !message) return;
+            const cleanMessage = message.trim();
+            if (!cleanMessage) return;
+            const lower = cleanMessage.toLowerCase();
+            let reply = 'Sweet as. ' + business + ' can help ' + audience + ' across ' + region + ' with ' + service + '. A quick site chat is usually the best first step.';
+
+            if (lower.includes('quote') || lower.includes('price') || lower.includes('cost')) {
+              reply = 'Sweet as. The quickest path is to share your address, rough scope, and timing so ' + business + ' can line up a site visit and give clearer pricing advice.';
+            } else if (lower.includes('deck') || lower.includes('outdoor')) {
+              reply = 'For outdoor work, it helps to know the size, access, and how you want to use the space. ' + business + ' can then guide you on layout, build method, and the next site step.';
+            } else if (lower.includes('reno') || lower.includes('kitchen') || lower.includes('bathroom')) {
+              reply = 'For renovation work, the best first step is a short scope chat about layout changes, finishes, and whether the home stays liveable during the build.';
+            } else if (lower.includes('urgent') || lower.includes('repair') || lower.includes('leak')) {
+              reply = 'If the job feels urgent, say what is failing, when it started, and whether the area is safe. That helps ' + business + ' prioritise the enquiry properly.';
+            }
+
+            const userBubble = document.createElement('div');
+            userBubble.className = 'chat-bubble user';
+            userBubble.textContent = cleanMessage;
+            thread.appendChild(userBubble);
+
+            const assistantBubble = document.createElement('div');
+            assistantBubble.className = 'chat-bubble assistant';
+            assistantBubble.textContent = reply;
+            thread.appendChild(assistantBubble);
+            thread.scrollTop = thread.scrollHeight;
+          };
+
+          prompts.forEach((prompt) => {
+            prompt.addEventListener('click', () => respond(prompt.getAttribute('data-chat-prompt') || ''));
+          });
+
+          form?.addEventListener('submit', (event) => {
+            event.preventDefault();
+            if (!input) return;
+            respond(input.value);
+            input.value = '';
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
