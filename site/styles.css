@@ -761,15 +761,27 @@ main { display: block; }
 }
 .showcase-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 16px;
+  align-items: stretch;
 }
 .showcase-tile {
-  padding: 20px;
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.05));
-  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.1);
+  padding: 22px 22px 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.12);
+}
+.showcase-grid .showcase-tile:first-child {
+  display: grid;
+  align-content: end;
+  min-height: 188px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.16)),
+    linear-gradient(135deg, rgba(58,185,100,0.16), rgba(12, 29, 26, 0.22));
+}
+.showcase-grid .showcase-tile:last-child {
+  background: rgba(255, 255, 255, 0.05);
 }
 .showcase-tile strong {
   display: block;
@@ -778,10 +790,10 @@ main { display: block; }
   line-height: 1.4;
 }
 .showcase-quote {
-  padding: 24px 26px;
-  border-radius: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  padding: 26px 28px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03));
 }
 .quote-text {
   margin: 0;
@@ -798,6 +810,11 @@ main { display: block; }
 .story-panel,
 .aside-card {
   box-shadow: 0 18px 34px rgba(18, 31, 29, 0.08);
+}
+.service-grid > .service-card,
+.project-grid > .project-card,
+.proof-grid > .proof-card {
+  backdrop-filter: blur(10px);
 }
 .services-shell .service-card:nth-child(4),
 .services-shell .service-card:nth-child(4) h3,
@@ -818,6 +835,12 @@ main { display: block; }
   display: grid;
   gap: 16px;
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(243,248,245,0.92));
+}
+.service-grid > .service-card:nth-child(2),
+.service-grid > .service-card:nth-child(3),
+.project-grid > .project-card:nth-child(2) {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(12, 29, 26, 0.06);
 }
 .service-visual,
 .project-visual {
