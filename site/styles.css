@@ -555,10 +555,11 @@ main { display: block; }
   max-width: 62ch;
 }
 .services-shell .service-grid {
-  gap: 22px;
+  gap: 26px;
+  align-items: start;
 }
 .proof-grid {
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 0.9fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr) minmax(0, 0.85fr);
   align-items: stretch;
 }
 
@@ -582,12 +583,16 @@ main { display: block; }
 	.service-grid > .service-card:nth-child(3) {
 	  grid-column: span 5;
 	}
+	.service-grid > .service-card:nth-child(3) {
+	  margin-top: 42px;
+	}
 	.service-grid > .service-card:nth-child(4) {
 	  grid-column: span 12;
 	  display: grid;
-	  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.1fr);
-	  gap: 22px;
-	  align-items: start;
+	  grid-template-columns: minmax(240px, 0.88fr) minmax(0, 1.12fr);
+	  gap: 28px;
+	  align-items: center;
+	  background: linear-gradient(135deg, rgba(16, 43, 37, 0.96), rgba(25, 67, 57, 0.9));
 	}
 	.project-grid > .project-card:nth-child(1) {
 	  grid-column: span 7;
@@ -595,6 +600,9 @@ main { display: block; }
 	.project-grid > .project-card:nth-child(2),
 	.project-grid > .project-card:nth-child(3) {
 	  grid-column: span 5;
+	}
+	.project-grid > .project-card:nth-child(2) {
+	  margin-top: 26px;
 	}
 	.project-grid > .project-card:nth-child(1) .project-visual {
 	  min-height: 286px;
@@ -617,7 +625,10 @@ main { display: block; }
 	}
 	.proof-grid > .proof-card:nth-child(2),
 	.proof-grid > .proof-card:nth-child(3) {
-	  margin-top: 34px;
+	  margin-top: 22px;
+	}
+	.proof-grid > .proof-card:nth-child(3) {
+	  margin-top: 58px;
 	}
 
 .proof-pill,
@@ -788,6 +799,19 @@ main { display: block; }
 .aside-card {
   box-shadow: 0 18px 34px rgba(18, 31, 29, 0.08);
 }
+.services-shell .service-card:nth-child(4),
+.services-shell .service-card:nth-child(4) h3,
+.services-shell .service-card:nth-child(4) p,
+.services-shell .service-card:nth-child(4) .card-kicker,
+.services-shell .service-card:nth-child(4) .mini-list li {
+  color: rgba(245, 249, 246, 0.94);
+}
+.services-shell .service-card:nth-child(4) .service-visual {
+  min-height: 240px;
+}
+.services-shell .service-card:nth-child(4) .mini-list li::marker {
+  color: rgba(245, 249, 246, 0.72);
+}
 .service-card,
 .project-card {
   position: relative;
@@ -835,7 +859,7 @@ main { display: block; }
 }
 .service-card:nth-child(2) {
   grid-column: span 5;
-  transform: translateY(20px);
+  transform: translateY(12px);
 }
 .project-card {
   grid-column: span 4;
