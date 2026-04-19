@@ -544,12 +544,13 @@ main { display: block; }
   display: grid;
   gap: 20px;
 }
-.service-grid,
-.project-grid,
-.coverage-grid,
-.faq-grid {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
+	.service-grid,
+	.project-grid,
+	.coverage-grid,
+	.faq-grid {
+	  grid-template-columns: repeat(12, minmax(0, 1fr));
+	}
+
 .services-shell .section-heading {
   max-width: 62ch;
 }
@@ -564,24 +565,61 @@ main { display: block; }
 .process-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.service-card,
-.project-card,
-.story-panel,
-.aside-card,
-.process-card,
-.coverage-card,
-.faq-card {
-  padding: 26px;
-  border-radius: 28px;
-}
-.proof-card {
-  padding: 26px;
-  border-radius: 28px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 16px;
-  align-items: start;
-}
+	.service-card,
+	.project-card,
+	.story-panel,
+	.aside-card,
+	.process-card,
+	.coverage-card,
+	.faq-card {
+	  padding: 26px;
+	  border-radius: 28px;
+	}
+	.service-grid > .service-card:nth-child(1) {
+	  grid-column: span 7;
+	}
+	.service-grid > .service-card:nth-child(2),
+	.service-grid > .service-card:nth-child(3) {
+	  grid-column: span 5;
+	}
+	.service-grid > .service-card:nth-child(4) {
+	  grid-column: span 12;
+	  display: grid;
+	  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.1fr);
+	  gap: 22px;
+	  align-items: start;
+	}
+	.project-grid > .project-card:nth-child(1) {
+	  grid-column: span 7;
+	}
+	.project-grid > .project-card:nth-child(2),
+	.project-grid > .project-card:nth-child(3) {
+	  grid-column: span 5;
+	}
+	.project-grid > .project-card:nth-child(1) .project-visual {
+	  min-height: 286px;
+	}
+	.project-grid > .project-card:nth-child(2),
+	.project-grid > .project-card:nth-child(3) {
+	  align-self: start;
+	}
+
+	.proof-card {
+	  padding: 26px;
+	  border-radius: 28px;
+	  display: grid;
+	  grid-template-columns: auto 1fr;
+	  gap: 16px;
+	  align-items: start;
+	}
+	.proof-grid > .proof-card:nth-child(1) {
+	  padding: 30px;
+	}
+	.proof-grid > .proof-card:nth-child(2),
+	.proof-grid > .proof-card:nth-child(3) {
+	  margin-top: 34px;
+	}
+
 .proof-pill,
 .process-card span {
   width: 48px;
