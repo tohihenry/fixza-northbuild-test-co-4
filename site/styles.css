@@ -175,8 +175,13 @@ main { display: block; }
 .hero-main,
 .hero-lower {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  grid-template-columns: minmax(0, 0.96fr) minmax(360px, 1.04fr);
   gap: 28px;
+}
+.hero-main {
+  align-items: start;
+}
+.hero-lower {
   align-items: end;
 }
 .hero-copy,
@@ -451,8 +456,7 @@ main { display: block; }
   border: 0;
   box-shadow: 0 26px 56px rgba(8, 19, 18, 0.22);
   background: linear-gradient(160deg, #10211f 0%, #16312d 34%, #244944 100%);
-  margin-top: 28px;
-  transform: translateY(-18px);
+  margin-top: 10px;
 }
 .showcase-panel,
 .quick-facts,
