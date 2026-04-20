@@ -847,7 +847,7 @@ main { display: block; }
   align-items: stretch;
 }
 .hero-copy {
-  padding: 46px;
+  padding: 38px 42px 34px;
 }
 .hero-showcase {
   padding: 16px;
