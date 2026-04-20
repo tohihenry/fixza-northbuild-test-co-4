@@ -515,8 +515,9 @@ main { display: block; }
 }
 .services-shell {
   background:
-    radial-gradient(circle at top right, rgba(58,185,100,0.16), transparent 28%),
-    linear-gradient(180deg, rgba(255,255,255,0.99), rgba(245,248,246,0.96));
+    radial-gradient(circle at top right, rgba(58,185,100,0.18), transparent 24%),
+    radial-gradient(circle at 0% 100%, rgba(11, 99, 128, 0.1), transparent 26%),
+    linear-gradient(180deg, rgba(255,255,255,0.99), rgba(241,247,244,0.96));
 }
 .proof-shell {
   background:
@@ -542,6 +543,23 @@ main { display: block; }
   background:
     radial-gradient(circle at top right, rgba(58,185,100,0.28), transparent 36%),
     rgba(255,255,255,0.1);
+}
+.testimonials-shell {
+  background:
+    radial-gradient(circle at top left, rgba(58,185,100,0.22), transparent 24%),
+    linear-gradient(135deg, rgba(14,31,28,0.98), rgba(23,48,43,0.96));
+  color: rgba(245, 249, 246, 0.96);
+}
+.testimonials-shell .section-heading p,
+.testimonials-shell .testimonial-card p,
+.testimonials-shell .testimonial-meta span,
+.testimonials-shell .testimonial-source {
+  color: rgba(228, 236, 231, 0.82);
+}
+.testimonials-shell .section-heading .eyebrow,
+.testimonials-shell .section-heading h2,
+.testimonials-shell .testimonial-meta strong {
+  color: rgba(244, 249, 246, 0.96);
 }
 .section-heading {
   display: grid;
@@ -763,6 +781,16 @@ main { display: block; }
   border: 1px solid rgba(18, 31, 29, 0.08);
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(242,248,244,0.92));
   box-shadow: 0 18px 36px rgba(18, 31, 29, 0.06);
+}
+.testimonials-shell .testimonial-card {
+  border: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+  box-shadow: none;
+}
+.testimonials-shell .testimonial-card:nth-child(1) {
+  background:
+    radial-gradient(circle at top right, rgba(58,185,100,0.24), transparent 34%),
+    rgba(255,255,255,0.08);
 }
 .testimonial-quote {
   margin: 0;
